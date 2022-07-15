@@ -1,0 +1,40 @@
+ITV=>implementavel
+prop=>propriedade
+NameSpace Cobilas.gerenciamento
+public class [ITV]Inventário<T>:(T=>ItemBase)
+T[] Itens;
+//Armazena os índices da lista item que estam nulos
+int[] gavetasVazias;
+int[] gavetasCheias;
+
+[prop]int Capacidade;
+[prop]int Comprimento;
+
+ctor(int capacidade)
+=>Item = New T[capacidade],
+=>ChecarGavetasVazias();
+
+void ChecarGavetasVazias();
+void ChecargavetasCheias();
+void Add(int índice, T item);
+T Remover(int índice);
+T Remover<T>(int índice)(T=>ItemBase);
+int IndexOff(T item);
+bool Contains(T item);
+void Reorganizar();
+void PucharDe([ITV]Inventário<T> Inventário);
+
+public class ItemBase : IEquetable<ItemBase>
+string Nome;
+guid ID;
+texture Imagem;
+
+bool Equal(object obj);
+int GetHashCode();
+bool Equal(ItemBase obj);
+virtual void Acimilar(ElementoTag item);
+
+static ItemBase CriarItem(ElementoTag item);
+
+bool operator ==(ItemBase A, ItemBase B);
+bool operator !=(ItemBase A, ItemBase B);
