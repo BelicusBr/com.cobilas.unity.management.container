@@ -1,18 +1,18 @@
 {
     "name": "Cobilas.Unity.Management.Container",
     "references": [
-        "Cobilas.Unity.Management.Runtime",
         "Cobilas.Unity.Utility",
         "Cobilas.Unity.Mono",
-        "Cobilas.Unity.Extensions"
+        "Cobilas.Unity.Extensions",
+        "Cobilas.Unity.Management.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "Cobilas.Collections.dll",
-        "CobilasCore.dll"
+        "CobilasCore.dll",
+        "Cobilas.Collections.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],
@@ -31,6 +31,16 @@
             "name": "com.cobilas.unity.extensions",
             "expression": "1.0",
             "define": "COBILAS_EXTENSIONS"
+        },
+        {
+            "name": "com.cobilas.unity.management.runtime",
+            "expression": "1.0",
+            "define": "COBILAS_MGT_RUNTIME"
+        },
+        {
+            "name": "com.cobilas.cobilascore",
+            "expression": "1.0",
+            "define": "COBILAS_CORE"
         }
     ],
     "noEngineReferences": false
