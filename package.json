@@ -1,6 +1,6 @@
 {
   "name": "com.cobilas.unity.management.container",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "displayName": "Cobilas Management Container",
   "description": "Pacote de gerenciamento de containers para unity3d",
   "licensesUrl": "https://github.com/BelicusBr/com.cobilas.unity.management.container/blob/main/LICENSE.md",
@@ -19,6 +19,6 @@
   },
 
   "relatedPackages": {
-    "com.cobilas.unity.management.container": "1.0.4"
+    "com.cobilas.unity.management.container": "1.0.5"
   }
 }
